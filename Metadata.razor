@@ -1,0 +1,43 @@
+﻿@using System.ComponentModel
+
+@implements IDisposable
+
+<title>_metadataTransferService.Title</title>
+<meta name="title" content="_metadataTransferService.Title" />
+<meta property="og:title" content="_metadataTransferService.Title" />
+<meta property="twitter:title" content="_metadataTransferService.Title" />
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="_metadataTransferService.Url" />
+<meta property="twitter:url" content="_metadataTransferService.Url" />
+
+<meta name="description" content="_metadataTransferService.Description" />
+<meta property="og:description" content="_metadataTransferService.Description" />
+<meta property="twitter:description" content="_metadataTransferService.Description" />
+
+<meta property="og:image" content="_metadataTransferService.Image" />
+<meta property="twitter:image" content="_metadataTransferService.Image" />
+
+<meta name="twitter:card" content="_metadataTransferService.Card" />
+
+<!--
+<meta name="theme-color" content="#FF0000">
+-->
+
+@code {
+    protected override void OnInitialized()
+    {
+        //_metadataTransferService.PropertyChanged += OnMetadataChanged;
+    }
+
+    private void OnMetadataChanged(object sender, PropertyChangedEventArgs e)
+    {
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        //_metadataTransferService.PropertyChanged -= OnMetadataChanged;
+    }
+}*/);
